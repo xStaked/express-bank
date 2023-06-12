@@ -26,6 +26,7 @@ const User = db.define('User', {
     status: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
+        defaultValue: true,
     },
 });
 module.exports = User;

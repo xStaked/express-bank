@@ -5,9 +5,6 @@ const app = require('./app');
 db.authenticate()
     .then(() => {
         console.log('Database connected');
-        app.listen(process.env.PORT, () => {
-            console.log(`Server running on port ${process.env.PORT}`);
-        });
     })
     .catch((err) => {
         console.log('Database connection failed');
